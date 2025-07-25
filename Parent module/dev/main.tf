@@ -1,10 +1,9 @@
-# Resource group
+
 module "azurerm_resource_group" {
   source      = "../../Child module/azurerm_resource_group"
   rg_name     = "rg-todoapp"
   rg_location = "centralindia"
-}
-# Vnet
+
 module "azurerm_virtual_network" {
   source        = "../../Child module/azurerm_virtual_network"
   depends_on    = [module.azurerm_resource_group]

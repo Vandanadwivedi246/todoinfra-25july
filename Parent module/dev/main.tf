@@ -39,7 +39,7 @@ module "frontend_vm" {
   depends_on           = [module.azurerm_frontend_subnet]
   source               = "../../Child module/azurerm_linux_virtual_machine"
   frontend_vm_name     = "frontend-vm1"
-  vnet_name            = "vnet1"
+  vnet_name            = "vnet12"
   rg_name              = "rg-todoapp"
   location             = "centralIndia"
   nic_name             = "frontend-nic"

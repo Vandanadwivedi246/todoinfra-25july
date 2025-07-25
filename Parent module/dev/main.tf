@@ -1,8 +1,4 @@
 
-module "azurerm_resource_group" {
-  source      = "../../Child module/azurerm_resource_group"
-  rg_name     = "rg-todoapp"
-  rg_location = "centralindia"
 
 module "azurerm_virtual_network" {
   source        = "../../Child module/azurerm_virtual_network"

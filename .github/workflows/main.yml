@@ -1,0 +1,13 @@
+name: "main workflow"
+on:
+ push:
+  branches:
+   - main
+   - features/*
+jobs: 
+ terraforminit:
+  name: terraform init
+  runs-on: macOS
+  steps:
+   -name: "dhoundusteps"
+    run: echo maharaj  
